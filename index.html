@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Валерия & Никита | Свадебное приглашение</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+
+        <!-- Open Graph для соцсетей и мессенджеров -->
+        <meta property="og:image" content="https://stakeif.github.io/wedding/assets/two.jpg" />
+
+        <!-- Шрифты -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@300;400;500;600&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Leaflet — карта места проведения -->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    </head>
+
+    <body>
+        <!-- HERO -->
+
+        <header class="hero">
+            <div class="overlay"></div>
+
+            <div class="hero-content">
+                <h2>Forever begins now</h2>
+
+                <h1>Валерия <span>&</span> Никита</h1>
+
+                <p class="date">10 октября 2026</p>
+
+                <div class="countdown">
+                    <div class="time">
+                        <span id="days">00</span>
+                        <small>дней</small>
+                    </div>
+
+                    <div class="time">
+                        <span id="hours">00</span>
+                        <small>часов</small>
+                    </div>
+
+                    <div class="time">
+                        <span id="minutes">00</span>
+                        <small>минут</small>
+                    </div>
+
+                    <div class="time">
+                        <span id="seconds">00</span>
+                        <small>секунд</small>
+                    </div>
+                </div>
+
+                <a href="#invite" class="btn">Открыть приглашение</a>
+            </div>
+        </header>
+
+        <!-- Приглашение -->
+
+        <section class="section reveal" id="invite">
+            <div class="container">
+                <h2>Приглашение</h2>
+
+                <div class="card invitation-card">
+                    <p class="invitation-text">
+                        И в этот самый миг, на пороге вечности, мы приглашаем вас разделить с нами первый день нашей
+                        бесконечной истории
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Программа -->
+
+        <section class="section light reveal">
+            <div class="container">
+                <h2>Ход вечера</h2>
+
+                <div class="timeline">
+                    <div class="event">
+                        <div class="circle"></div>
+
+                        <div class="content">
+                            <span class="time-label">12:00</span>
+                            <p class="event-desc">
+                                Торжественная регистрация ✨<br />
+                                <span class="location">с. Троицкое, пр-т Ленина, 8</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="event">
+                        <div class="circle"></div>
+
+                        <div class="content">
+                            <span class="time-label">После регистрации</span>
+                            <p class="event-desc">Прогулка и фотосессия с гостями 📸<br /></p>
+                        </div>
+                    </div>
+
+                    <div class="event">
+                        <div class="circle"></div>
+
+                        <div class="content">
+                            <span class="time-label">17:00</span>
+                            <p class="event-desc">
+                                Банкет 🍾🕺💃<br />
+                                <span class="location">с. Троицкое, ул. Пушкина, 16</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="event">
+                        <div class="circle"></div>
+
+                        <div class="content">
+                            <span class="time-label">23:00</span>
+                            <p class="event-desc">Окончание вечера 🎇<br /></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Локация -->
+
+        <section class="section reveal">
+            <div class="container">
+                <h2>Место встречи</h2>
+
+                <div class="card">
+                    <h3>Столовая «Центральная»</h3>
+
+                    <p>Алтайский край, с. Троицкое, улица Пушкина, 16</p>
+
+                    <div id="map" class="map-embed" aria-label="Место проведения на карте"></div>
+
+                    <div class="map-buttons">
+                        <a href="https://yandex.ru/maps/-/CTdrqN2u" class="btn small" target="_blank" rel="noopener">
+                            Яндекс Карты
+                        </a>
+
+                        <a href="https://go.2gis.com/lqoOt" class="btn small" target="_blank" rel="noopener"> 2ГИС </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Дресс-код -->
+
+        <section class="section light reveal">
+            <div class="container">
+                <h2>Дресс-код</h2>
+
+                <div class="card dress-card">
+                    <p>
+                        «Оденьтесь так, как будто вы идёте<br />
+                        на тайный бал в лесу...»
+                    </p>
+                    <br />
+                    <p>Мы будем рады видеть вас в нежных, природных оттенках — как листва осеннего Форкса.</p>
+                </div>
+                <div class="dress-example">
+                    <img src="./assets/color.webp" alt="Дресс-код" />
+                </div>
+            </div>
+        </section>
+
+        <!-- Подарки -->
+
+        <section class="section reveal">
+            <div class="container">
+                <h2>Пожелания</h2>
+
+                <div class="card wish-card">
+                    <p>«Самое ценное, что вы можете нам подарить — это ваше присутствие и улыбки в этот день.»</p>
+                    <br />
+
+                    <p>Мы не просим цветов, которые увянут, как осенние листья...</p>
+                    <br />
+
+                    <p>Если вы захотите поддержать нас, мы будем благодарны за ваш вклад в нашу общую мечту. ✨</p>
+                    <br />
+                </div>
+            </div>
+        </section>
+
+        <!-- RSVP -->
+
+        <section class="section reveal">
+            <div class="container">
+                <h2>Подтверждение</h2>
+
+                <div class="card rsvp-card">
+                    <p class="rsvp-text">
+                        «До встречи в день,<br />
+                        когда время остановится...»
+                    </p>
+                    <br />
+
+                    <form id="rsvp">
+                        <div class="name-row">
+                            <input type="text" name="firstName" placeholder="Ваше имя" required />
+
+                            <input type="text" name="lastName" placeholder="Фамилия" required />
+                        </div>
+
+                        <select name="attend">
+                            <option value="Буду">Буду ❤️</option>
+
+                            <option value="Не смогу">Не смогу 💔</option>
+                        </select>
+
+                        <select name="plusOne">
+                            <option value="Нет">Один</option>
+
+                            <option value="Да">С сопровождающим</option>
+                        </select>
+
+                        <div id="guests" hidden>
+                            <div class="guest-row">
+                                <input type="text" name="guest" placeholder="Имя сопровождающего" />
+
+                                <button type="button" class="remove-guest" aria-label="Убрать сопровождающего">
+                                    ×
+                                </button>
+                            </div>
+
+                            <button type="button" id="addGuest" class="add-guest">+ Добавить гостя</button>
+                        </div>
+
+                        <textarea
+                            name="comment"
+                            rows="4"
+                            placeholder="Ваши пожелания, предпочтения или слова..."
+                        ></textarea>
+
+                        <button type="submit" class="btn">Подтвердить</button>
+                    </form>
+
+                    <div id="success" class="success">
+                        ❤️ Спасибо!
+                        <br /><br />
+                        Мы с нетерпением ждём встречи с вами!
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p class="footer-text">«Вечность — это только начало...»</p>
+            <br />
+            С любовью,<br />
+            👰 Валерия
+            <a class="phone" href="tel:+79635272014"> +7 (963) <span>не_звонить</span> 527-20-14 </a>
+            <br />
+            🤵 Никита
+            <a class="phone" href="tel:+79161234567"> +7 (000) <span>не_звонить</span> 000-00-00 </a>
+        </footer>
+
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+        <script src="script.js"></script>
+    </body>
+</html>
