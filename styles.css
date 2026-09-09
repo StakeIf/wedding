@@ -52,7 +52,7 @@ p {
 .hero {
     height: 100vh;
     min-height: 700px;
-    background-image: url("assets/two.jpg");
+    background-image: url("assets/two_gray.jpg");
     background-size: cover;
     background-position: center;
     position: relative;
